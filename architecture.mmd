@@ -1,0 +1,39 @@
+﻿flowchart TD
+    A["Customer Support Request"] --> B["LLM Support Manager"]
+
+    B <--> M[("Conversation Memory<br/>SQLite Database")]
+
+    B --> C["LLM Classifier Agent"]
+    C --> D{"Ticket Category"}
+
+    D -->|Billing| E["Billing Specialist"]
+    D -->|Technical| F["Technical Specialist"]
+    D -->|Account| G["Account Specialist"]
+
+    E --> E1["Billing Tools<br/>Policy Search<br/>Transaction Verification<br/>Duplicate Payment Evaluation"]
+
+    F --> F1["Technical Tools<br/>Severity Check<br/>Knowledge Retrieval<br/>Solution Validation"]
+
+    G --> G1["Account Tools<br/>Account Lookup<br/>Access Verification<br/>Account Guidance"]
+
+    E1 --> H["Specialist Result"]
+    F1 --> H
+    G1 --> H
+
+    H --> I["Escalation Router"]
+    I --> J{"Human Review Required?"}
+
+    J -->|Yes| K["Human Review Queue"]
+    J -->|No| L["Customer Response"]
+
+    K --> N["Human Decision"]
+    N --> L
+
+    L --> B
+    B --> O[("Append-Only JSONL Run Log")]
+    B --> P["Final Ticket State"]
+
+    style B fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    style I fill:#fef3c7,stroke:#d97706,color:#78350f
+    style K fill:#fee2e2,stroke:#dc2626,color:#7f1d1d
+    style P fill:#dcfce7,stroke:#16a34a,color:#14532d

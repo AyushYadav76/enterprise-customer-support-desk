@@ -1,0 +1,32 @@
+
+CUSTOMER SUPPORT BILLING POLICY
+
+POLICY 1: DUPLICATE PAYMENTS
+If a customer is charged twice for the same order,
+the duplicate transaction must be verified.
+Verified duplicate payments are eligible for a refund.
+
+POLICY 2: REFUND ELIGIBILITY
+A refund request must be checked against the
+transaction record before approval.
+
+POLICY 3: REFUND PROCESSING
+Approved refunds are marked for processing.
+The actual crediting time depends on the payment provider.
+
+POLICY 4: FAILED PAYMENTS
+If payment is deducted but the order is unsuccessful,
+the transaction must be checked before determining
+refund eligibility.
+
+POLICY 5: INVOICE REQUESTS
+Customers may request a copy of their invoice.
+The support team must verify the order before providing it.
+
+POLICY 6: HUMAN ESCALATION
+If transaction information is unavailable or conflicting,
+the case must be escalated to human billing support.
+
+IMPORTANT:
+Never claim that a refund has actually been processed
+unless the transaction system confirms it.

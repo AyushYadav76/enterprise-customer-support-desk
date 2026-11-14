@@ -1,0 +1,11 @@
+
+semantic-kernel
+chromadb
+streamlit
+python-dotenv
+pydantic
+pytest
+ollama
+nbformat
+ipykernel
+jupyter
